@@ -1,0 +1,13 @@
+body{
+    width: 100vh;
+}
+
+#messages{
+    border:solid 1px grey;
+    height :300px;
+}
+
+#area{
+    height :100px;
+    width: 300px;
+}
