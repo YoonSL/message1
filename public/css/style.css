@@ -5,9 +5,12 @@ body{
 #messages{
     border:solid 1px grey;
     height :300px;
+    width : 300px;
+    line-height:8px;
+    padding-top:5px;
 }
 
-#area{
+#msg-area{
     height :100px;
     width: 300px;
 }

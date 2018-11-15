@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel ="stylesheet" href = "css/reset.css">
-    <link rel ="stylesheet" href = "css/style.css"> 
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>message</title>
 </head>
-<body>
-    <form>
-        <input id = "message" placeholder = "Enter message"/>
-        <button id = "send-msg">Send</button>
-        <br>
-        <div id = "card">
-            <div id = "messages" class="card-block">
 
-            </div>
-        </div>
-        
+<body>
+    
+    <div id="select-container"></div>
+    <form id='msg-form'>
+        <input id="idBox" placeholder="Enter your name" />
+        <button id="send-name">Send</button>
+        <div id="messages"></div>
+        <textarea id="msg-area" placeholder="Enter message"></textarea>
+        </br>
+        <button id="send-msg">Send</button>
     </form>
 
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-    <script src ="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
-    <script src = '/js/chat.js'></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+    <script src='/js/chat.js'></script>
 </body>
+
 </html>

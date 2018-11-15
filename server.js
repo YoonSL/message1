@@ -12,7 +12,7 @@ app.use(express.static('public'));
 mongoose.connect('mongodb://localhost/realTimeChat', {useNewUrlParser:true});
 
 require('./sockets/message-sockets')(io);
-
+require('./routes/api-routes')(app);
 require('./routes/html-routes')(app);
 
 server.listen(PORT, ()=>{
